@@ -8,7 +8,7 @@ This image is built on top of PyTorch’s official Docker images, ensuring compa
 
 ## Available Images
 
-#### Image 2.4.1
+### Image 2.4.1
 
 Base Image: pytorch/pytorch:2.4.1-cuda12.4-cudnn9-devel
 
@@ -16,7 +16,7 @@ Base Image: pytorch/pytorch:2.4.1-cuda12.4-cudnn9-devel
 docker pull ls250824/pytorch-cuda-ubuntu-develop:04102024
 ```
 
-#### Image 2.5.1
+### Image 2.5.1
 
 Base Image: pytorch/pytorch:2.5.1-cuda12.4-cudnn9-devel
 
