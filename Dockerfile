@@ -1,6 +1,5 @@
-# pytorch cuda ubuntu
-# https://hub.docker.com/r/pytorch/pytorch/
-FROM pytorch/pytorch:2.5.1-cuda12.4-cudnn9-devel AS base
+# pytorch cuda ubuntu develop
+FROM pytorch/pytorch:2.7.1-cuda12.6-cudnn9-devel AS base
 
 # Set non-interactive mode and timezone
 ARG DEBIAN_FRONTEND=noninteractive

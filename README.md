@@ -1,10 +1,12 @@
-# PyTorch CUDA Develop Image Runtime
+# PyTorch CUDA Develop Image
 
 A lightweight runtime Docker base image for PyTorch with CUDA Develop support.
 
 ## Base Image
 
 This image is built on top of PyTorch’s official Docker images, ensuring compatibility with CUDA and cuDNN.
+
+- [Docker Hub](https://hub.docker.com/r/pytorch/pytorch/)
 
 ## Available Images
 
@@ -22,6 +24,22 @@ Base Image: pytorch/pytorch:2.5.1-cuda12.4-cudnn9-devel
 
 ```bash
 docker pull ls250824/pytorch-cuda-ubuntu-develop:08122024
+```
+
+### Image 2.6.0
+
+Base Image: pytorch/pytorch:2.6.0-cuda12.4-cudnn9-devel
+
+```bash
+docker pull ls250824/pytorch-cuda-ubuntu-develop:04062025
+```
+
+### Image 2.7.1
+
+Base Image: pytorch/pytorch:2.7.1-cuda12.6-cudnn9-devel
+
+```bash
+docker pull ls250824/pytorch-cuda-ubuntu-develop:01072025
 ```
 
 ## Building the Docker Image
@@ -42,8 +60,9 @@ Run the following command to clone the repository and build the image:
 
 ```bash
 git clone https://github.com/jalberty2018/pytorch-cuda-ubuntu-develop.git
+mv ./pytorch-cuda-ubuntu-develop/build-docker.py ..
 
-python3 pytorch-cuda-ubuntu-develop/build-docker.py \
+python3 build-docker.py \
 --username=<your_dockerhub_username> \
 --tag=<custom_tag> \ 
 pytorch-cuda-ubuntu-develop
