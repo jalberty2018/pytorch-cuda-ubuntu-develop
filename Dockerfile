@@ -13,7 +13,7 @@ RUN apt-get update && apt-get --no-install-recommends install -y \
     openssh-server openssh-client \
     git git-lfs libgl1 libglx-mesa0 ffmpeg \
     tmux wget vim nano mc htop curl lshw pciutils nvtop p7zip-full lsof jq \
-    build-essential make cmake \
+    build-essential make cmake apt-utils ninja-build \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
