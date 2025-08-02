@@ -43,5 +43,5 @@ docker pull ls250824/pytorch-cuda-ubuntu-develop:01072025
 Base Image: pytorch/pytorch:2.7.1-cuda12.8-cudnn9-devel
 
 ```bash
-docker pull ls250824/pytorch-cuda-ubuntu-develop:05072025
+docker pull ls250824/pytorch-cuda-ubuntu-develop:21072025
 ```
