@@ -78,7 +78,7 @@ Run the following command to clone the repository and build the image:
 git clone https://github.com/jalberty2018/pytorch-cuda-ubuntu-develop.git
 mv ./pytorch-cuda-ubuntu-develop/build-docker.py ..
 
-python3 build-docker.py \
+python build-docker.py \
 --username=<your_dockerhub_username> \
 --tag=<custom_tag> \ 
 pytorch-cuda-ubuntu-develop
