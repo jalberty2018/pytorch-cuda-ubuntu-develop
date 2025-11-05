@@ -20,7 +20,7 @@ This image is built on top of PyTorch’s official Docker images, ensuring compa
 | Python    | `3.11.x`             |
 | PyTorch   | `2.9.0`              |
 | CUDA      | `13.0`             |
-| Triton    | `3.4.0`               |
+| Triton    | `3.5.0`               |
 | nvcc      | `13.0.x`            |
 
 ## Available Images
