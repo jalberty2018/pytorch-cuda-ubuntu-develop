@@ -1,6 +1,6 @@
 # PyTorch CUDA Develop Image
 
-A lightweight runtime Docker base image for PyTorch with CUDA support.
+A Docker base image for PyTorch with CUDA support.
 
 ## Base Image
 
@@ -10,16 +10,16 @@ This image is built on top of PyTorch’s official Docker images, ensuring compa
 - [Pytorch.org](https://pytorch.org)
 - [Triton](https://triton-lang.org/main/index.html)
 
-## Setup
+## Setup latest image
 
 | Component | Version              |
 |-----------|----------------------|
 | OS        | `Ubuntu 22.04 x86_64` |
 | Python    | `3.11.x`             |
-| PyTorch   | `2.8.0`              |
-| CUDA      | `12.9.1`             |
+| PyTorch   | `2.9.0`              |
+| CUDA      | `13.0`             |
 | Triton    | `3.4.0`               |
-| nvcc      | `12.9.x`            |
+| nvcc      | `13.0.x`            |
 
 ## Available Images
 
@@ -67,4 +67,14 @@ Base Image: pytorch/pytorch:2.8.0-cuda12.9-cudnn9-devel
 
 ```bash
 docker pull ls250824/pytorch-cuda-ubuntu-develop:22082025
+```
+
+### Image 2.9.0
+
+Base Image: pytorch/pytorch:2.9.0-cuda13.0-cudnn9-devel
+
+Custom Build: 
+
+```bash
+docker pull ls250824/pytorch-cuda-ubuntu-develop:05112025
 ```
