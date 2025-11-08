@@ -1,5 +1,5 @@
 # pytorch cuda ubuntu develop
-FROM pytorch/pytorch:2.9.0-cuda13.0-cudnn9-devel AS base
+FROM pytorch/pytorch:2.9.0-cuda12.8-cudnn9-devel AS base
 
 # Set non-interactive mode and timezone
 ARG DEBIAN_FRONTEND=noninteractive
@@ -16,5 +16,3 @@ RUN apt-get update && apt-get --no-install-recommends install -y \
     build-essential make cmake apt-utils ninja-build pkg-config libcairo2-dev \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
-
-
