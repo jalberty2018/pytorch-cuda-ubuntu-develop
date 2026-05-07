@@ -88,6 +88,16 @@ Custom Build:
 docker pull ls250824/pytorch-cuda-ubuntu-develop:10032026
 ```
 
+### Image 2.11.0
+
+Base Image: pytorch/pytorch:2.11.0-cuda12.8-cudnn9-devel
+
+Custom Build:
+
+```bash
+docker pull ls250824/pytorch-cuda-ubuntu-develop:07052026
+```
+
 ## Building the Docker Image
 
 You can build and push the image to Docker Hub using the `build-docker.py` script.
