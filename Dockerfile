@@ -12,7 +12,7 @@ WORKDIR /workspace
 RUN apt-get update && apt-get --no-install-recommends install -y \
     openssh-server openssh-client \
     git git-lfs libgl1 libglx-mesa0 ffmpeg \
-    tmux wget vim nano mc htop curl lshw pciutils nvtop p7zip-full lsof jq ncdu unzip \
+    tmux wget vim nano mc htop curl lshw pciutils nvtop 7zip age lsof jq ncdu unzip fio ioping \
     build-essential cmake ninja-build pkg-config apt-utils libcairo2-dev \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
