@@ -95,3 +95,13 @@ Custom Build:
 ```bash
 docker pull ls250824/pytorch-cuda-ubuntu-develop:07052026
 ```
+
+### Image 2.12.1
+
+Base Image: pytorch/pytorch:2.12.1-cuda13.0-cudnn9-devel
+
+Custom Build:
+
+```bash
+docker pull ls250824/pytorch-cuda-ubuntu-develop:22092026
+```
