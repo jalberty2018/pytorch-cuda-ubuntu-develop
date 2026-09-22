@@ -16,8 +16,3 @@ RUN apt-get update && apt-get --no-install-recommends install -y \
     build-essential cmake ninja-build pkg-config apt-utils libcairo2-dev \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
-
-# Install Python build dependencies in the active Python environment
-RUN python -m pip install --no-cache-dir \
-    build packaging wheel setuptools \
-    "scikit-build-core>=0.9.2" psutil ninja
